@@ -91,7 +91,7 @@ class SendThread(threading.Thread):
             email = recipient
 
         # populate per-recipient context
-        context = Context(self.default_context)
+        context = dict(self.default_context)
         context['recipient'] = recipient
         context['email'] = email
 
