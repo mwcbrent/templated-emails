@@ -1,4 +1,4 @@
-from django.template.base import Library
+from django.template import Library
 import textwrap
 
 register = Library()
